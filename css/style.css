@@ -10,8 +10,16 @@ header{
   position: fixed;
   width: 100%;
 }
-#navMobile{
+#navDesktop i{
   display: none;
+}
+#navDesktop ul{
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  }
+#navDesktop li{
+  list-style: none;
 }
 #navDesktop{
   width: 100%;
@@ -107,23 +115,22 @@ footer{
 }
 
 @media(min-width: 0px) and (max-width:1024px){
+
   #navDesktop{
-    display: none;
-  }
-  #navMobile{
-    display: block;
-    color: white;
-    width: 100%;
     justify-content: flex-end;
-    align-items: center;
+  }
+  #navDesktop ul{
+    height: 0;
+    overflow: hidden;
+  }
+  #navDesktop i{
+    display:flex;
+    color: white;
     padding: 2% 5%;
   }
-  #navMobile i{
-    align-self: flex-end;
-  }
-  #navMobile i:hover{
+  #navDesktop i:hover{
     color: #F1C40F;
-  }
+}
   #portada{
     padding: 10%;
   }
@@ -137,7 +144,7 @@ footer{
     display:none;
   }
   #video{
-    background: #EEF64D;
+    background: #C9F456;
   }
   .contenedorVideo{
     height: 100%;
