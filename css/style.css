@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Baloo', cursive;
+}
+.container{
+  display: flex;
+}
+header{
+  background: #f35c7f;
+  position: fixed;
+  width: 100%;
+}
+nav{
+  width: 100%;
+  justify-content: space-around;
+  padding: 2% 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+a:hover{
+  color:#F1C40F;
+  cursor: pointer;
+}
+#portada, #texto, #video, #formulario{
+  flex-direction: column;
+  align-items: center;
+}
+h2{
+  margin: 3%;
+  font-size: 30px;
+  font-family: 'Taviraj', serif;
+}
+#portada{
+  background-image: url(../assets/img/portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding: 20% 15%;
+  color: white;
+}
+#portada h1{
+  font-size: 50px;
+  font-family: 'Taviraj', serif;
+}
+#portada p{
+  font-size: 30px;
+  text-align: center;
+}
+#texto{
+  background: #EEF64D;
+}
+.texto-imagen{
+  align-items: center;
+  width: 100%;
+}
+.imagen{
+  width: 30%;
+  margin: 3%;
+}
+.texto{
+  width: 70%;
+  text-align: justify;
+  margin: 3%;
+}
+.entradaInfo{
+  margin: 1%;
+  padding: 1%;
+  width: 40%;
+}
+.contenedorVideo{
+  width: 50%;
+  height: 450px;
+  padding: 1%;
+}
+.btn{
+  background: white;
+  color: #F35C7F;
+  border: 2px solid #F35C7F;
+  padding: 1% 2%;
+}
+.btn:hover{
+  background: #F35C7F;
+  color: white;
+  border-color: white;
+  cursor: pointer;
+}
+footer{
+  justify-content: center;
+  padding: 1%;
+  background: #444b53;
+}
+#video{
+  padding-bottom: 3%;
+}
+#formulario{
+  background: #C9F456;
+  padding-bottom: 3%;
+}
+
+@media(min-width: 0px) and (max-width:1024px){
+  #portada{
+    padding: 10%;
+  }
+  #portada p{
+    font-size: 25px;
+  }
+  #texto{
+    display:none;
+  }
+  #video{
+    background: #EEF64D;
+  }
+  .contenedorVideo{
+    height: 250px;
+  }
+  #formulario{
+    background: #fff;
+  }
+}
