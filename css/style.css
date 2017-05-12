@@ -10,7 +10,10 @@ header{
   position: fixed;
   width: 100%;
 }
-nav{
+#navMobile{
+  display: none;
+}
+#navDesktop{
   width: 100%;
   justify-content: space-around;
   padding: 2% 0;
@@ -104,11 +107,31 @@ footer{
 }
 
 @media(min-width: 0px) and (max-width:1024px){
+  #navDesktop{
+    display: none;
+  }
+  #navMobile{
+    display: block;
+    color: white;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2% 5%;
+  }
+  #navMobile i{
+    align-self: flex-end;
+  }
+  #navMobile i:hover{
+    color: #F1C40F;
+  }
   #portada{
     padding: 10%;
   }
+  #portada h1{
+    font-size: 30px;
+  }
   #portada p{
-    font-size: 25px;
+    font-size: 15px;
   }
   #texto{
     display:none;
@@ -117,7 +140,7 @@ footer{
     background: #EEF64D;
   }
   .contenedorVideo{
-    height: 250px;
+    height: 100%;
   }
   #formulario{
     background: #fff;
